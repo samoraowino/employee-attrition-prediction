@@ -68,3 +68,4 @@ All models were trained using a 50–50 train-test split and evaluated using:
 1. Clone this repository:
    ```bash
    git clone https://github.com/samoraowino/employee-attrition-prediction.git
+   ```
