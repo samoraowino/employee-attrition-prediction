@@ -43,7 +43,7 @@ All models were trained using a 50–50 train-test split and evaluated using:
 
 - **Top predictors** of attrition were: `OverTime`, `JobSatisfaction`, `MonthlyIncome`, `WorkLifeBalance`.
 - **Decision Trees** provided explainable rules useful for HR policy.
-- **Neural Networks** outperformed others in raw accuracy.
+- KNN achieved the highest accuracy at 84.35%, followed by the Neural Network at 83.13% and the Decision Tree at 82.86%.
 
 ---
 
