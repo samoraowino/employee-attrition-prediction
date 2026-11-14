@@ -9,13 +9,13 @@ The dataset used is from Kaggle: **[IBM HR Analytics Employee Attrition & Perfor
 
 ---
 
-## 📌 Project Objective
+##  Project Objective
 
 To predict whether an employee is likely to leave the company using machine learning models and compare their performance using accuracy based on confusion matrix values.
 
 ---
 
-## ⚙️ Models Used
+##  Models Used
 
 | Model               | Notes                                     |
 |--------------------|-------------------------------------------|
@@ -29,7 +29,7 @@ All models were trained using a 50–50 train-test split and evaluated using:
 
 ---
 
-## 🧪 Evaluation Summary
+##  Evaluation Summary
 
 | Model               | Accuracy (%) | Notes                              |
 |--------------------|--------------|------------------------------------|
@@ -39,7 +39,7 @@ All models were trained using a 50–50 train-test split and evaluated using:
 
 ---
 
-## 📊 Key Insights
+##  Key Insights
 
 - **Top predictors** of attrition were: `OverTime`, `JobSatisfaction`, `MonthlyIncome`, `WorkLifeBalance`.
 - **Decision Trees** provided explainable rules useful for HR policy.
@@ -47,7 +47,7 @@ All models were trained using a 50–50 train-test split and evaluated using:
 
 ---
 
-## 🛠️ Tools Used
+## Tools Used
 
 - Python 3.x
 - scikit-learn
@@ -57,15 +57,3 @@ All models were trained using a 50–50 train-test split and evaluated using:
 - GitHub + VS Code
 
 ---
-
-## 🔄 Future Work
-- Deploy as a web app using Streamlit or Flask.
-
----
-
-## 👨‍💻 How to Run
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/samoraowino/employee-attrition-prediction.git
-   ```
