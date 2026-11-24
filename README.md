@@ -31,19 +31,21 @@ All models were trained using a 50–50 train-test split and evaluated using:
 
 ##  Evaluation Summary
 
-| Model               | Accuracy (%) | Notes                              |
-|--------------------|--------------|------------------------------------|
-|KNN (k=5)            | 84.35%       | Best accuracy, but sensitive to feature scaling       |
-|Neural Networks      | 83.13%       | Performs well overall, handles non-linear patterns   |
-| Decision Tree       | 82.86%       | Most interpretable, but slightly less accurate       |
+| Model               | Accuracy (%) | Recall on leavers (%) | Notes                                              |
+|--------------------|--------------|-----------------------|----------------------------------------------------|
+| KNN (k=5)           | 84.35        | 16.81                 | Highest accuracy, but misses most leavers          |
+| Neural Network      | 83.13        | 36.97                 | Best at catching leavers; handles non-linear patterns |
+| Decision Tree       | 82.86        | 32.77                 | Most interpretable                                 |
+
+**Note on class imbalance:** 83.9% of employees stayed, so a model that always predicts "stay" would score about 83.9% accuracy. Recall on the leaver class (119 leavers in the 735-record test set) gives a better comparison of the models.
 
 ---
 
 ##  Key Insights
 
-- **Top predictors** of attrition were: `OverTime`, `JobSatisfaction`, `MonthlyIncome`, `WorkLifeBalance`.
+- **Top predictors** of attrition (Decision Tree feature importance) were: `TotalWorkingYears`, `MonthlyIncome`, `YearsWithCurrManager`, `OverTime`.
 - **Decision Trees** provided explainable rules useful for HR policy.
-- KNN achieved the highest accuracy at 84.35%, followed by the Neural Network at 83.13% and the Decision Tree at 82.86%.
+- KNN achieved the highest accuracy (84.35%), but the Neural Network identified the most leavers (36.97% recall), making it the more useful model for flagging at-risk employees.
 
 ---
 
